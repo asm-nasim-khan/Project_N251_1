@@ -1,0 +1,66 @@
+/* ===== FORM BLOCK WRAPPER ===== */
+.status-update-section{
+  margin:20px auto;
+  padding:20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#f9f9f9;
+}
+
+.status-container{
+  width:600px;
+  padding:15px 20px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  background:#fff;
+  border-radius:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+
+/* ===== INPUTS ===== */
+.username-input,
+.status-input{
+  width:100%;
+  padding:10px;
+  font-size:14px;
+  border:1px solid #ccc;
+  border-radius:5px;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+.status-input{
+  min-height:100px;
+  resize:none;           /* no manual resize-grabber */
+  border-radius:8px;
+  font-size:16px;
+  border-color:#ddd;
+  transition:border .2s;
+}
+
+.status-input:focus{
+  border-color:#1877f2;
+  outline:none;
+}
+
+/* ===== BUTTON ===== */
+.status-actions{
+  display:flex;
+  justify-content:flex-end;
+}
+
+.post-btn{
+  padding:10px 20px;
+  font-size:16px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  background:#1877f2;
+  color:#fff;
+  transition:background .2s;
+}
+
+.post-btn:hover{background:#145db7;}
+.post-btn:active{background:#0f4b9d;}

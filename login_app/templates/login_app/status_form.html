@@ -1,0 +1,29 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'login_app/css/status_form.css' %}">
+
+<section class="status-update-section">
+  <div class="status-container">
+    <form method="POST">
+      {% csrf_token %}
+      
+      <!-- Username -->
+      <input  type="text"
+              name="user_name"
+              class="username-input"
+              placeholder="Enter your name"
+              required />
+
+      <!-- Status -->
+      <textarea name="post"
+                class="status-input"
+                placeholder="What's on your mind?"
+                required></textarea>
+
+      <!-- Submit -->
+      <div class="status-actions">
+        <button type="submit" class="post-btn">Post</button>
+      </div>
+    </form>
+  </div>
+</section>
